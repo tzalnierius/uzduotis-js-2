@@ -30,14 +30,13 @@ var countries = [
     country1, country2, country3, country4, country5
 ]
 
-var country
 
-for(country of countries){
+for(var country of countries){
     console.log(`Šalis: ${country.name}, joje gyvena ${Number(country.population/1000000).toFixed(2)} mln. gyventojų.`)
     console.log(`Valstybės plotas: ${Number(country.area).toFixed(2)} km², plotas tenkantis vienam gyventojui: ${Number(country.area*1000000/country.population).toFixed(2)} m²`)
 }
 function showCountries(){
-    for(country of countries){
+    for(var country of countries){
         console.log(`Šalis: ${country.name}, joje gyvena ${Number(country.population/1000000).toFixed(2)} mln. gyventojų.`)
         console.log(`Valstybės plotas: ${Number(country.area).toFixed(2)} km², plotas tenkantis vienam gyventojui: ${Number(country.area*1000000/country.population).toFixed(2)} m²`)
     }
